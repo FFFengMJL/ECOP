@@ -1,0 +1,653 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date              : Fri Dec 28 02:56:16 2018
+| Host              : WillKen running 64-bit major release  (build 9200)
+| Command           : report_clock_utilization -file imptop_clock_utilization_routed.rpt
+| Design            : imptop
+| Device            : 7a35t-cpg236
+| Speed File        : -1  PRODUCTION 1.14 2014-09-11
+| Temperature Grade : C
+-----------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Details of Global Clocks
+3. Details of Regional Clocks
+4. Details of Multi-Regional Clocks
+5. Details of I/O Clocks
+6. Details of Local Clocks
+7. Clock Regions : Key Resource Utilization
+8. Net wise resources used in clock region X0Y0
+9. Net wise resources used in clock region X1Y0
+
+1. Clock Primitive Utilization
+------------------------------
+
++-------+------+-----------+-----------+
+| Type  | Used | Available | Num Fixed |
++-------+------+-----------+-----------+
+| BUFG  |    2 |        32 |         0 |
+| BUFH  |    0 |        72 |         0 |
+| BUFIO |    0 |        20 |         0 |
+| MMCM  |    0 |         5 |         0 |
+| PLL   |    0 |         5 |         0 |
+| BUFR  |    0 |        20 |         0 |
+| BUFMR |    0 |        10 |         0 |
++-------+------+-----------+-----------+
+
+
+2. Details of Global Clocks
+---------------------------
+
++-------+--------------------+---------------+--------------+-------+
+|       |                    |               |   Num Loads  |       |
++-------+--------------------+---------------+------+-------+-------+
+| Index | BUFG Cell          | Net Name      | BELs | Sites | Fixed |
++-------+--------------------+---------------+------+-------+-------+
+|     1 | clk_IBUF_BUFG_inst | clk_IBUF_BUFG |   18 |     5 |    no |
+|     2 | key_out_BUFG_inst  | key_out_BUFG  | 1160 |   640 |    no |
++-------+--------------------+---------------+------+-------+-------+
+
+
+3. Details of Regional Clocks
+-----------------------------
+
+4. Details of Multi-Regional Clocks
+-----------------------------------
+
+5. Details of I/O Clocks
+------------------------
+
+6. Details of Local Clocks
+--------------------------
+
++-------+--------------------------------+--------------------------------+--------------+-------+
+|       |                                |                                |   Num Loads  |       |
++-------+--------------------------------+--------------------------------+------+-------+-------+
+| Index | Local Clk Src                  | Net Name                       | BELs | Sites | Fixed |
++-------+--------------------------------+--------------------------------+------+-------+-------+
+|     1 | cputop/pc/nextcon_reg[2]_i_2   | cputop/pc/E[0]                 |    3 |     1 |    no |
+|     2 | div/q_reg[17]                  | div/out[0]                     |    6 |     5 |    no |
+|     3 | cputop/dreg/ram_reg[0][7]_i_2  | cputop/dreg/E[0]               |    8 |     7 |    no |
+|     4 | cputop/dreg/ram_reg[60][7]_i_2 | cputop/dreg/wdata_reg[31]_0[0] |    8 |     4 |    no |
+|     5 | cputop/dreg/ram_reg[10][7]_i_2 | cputop/dreg/wdata_reg[7]_10[0] |    8 |     7 |    no |
+|     6 | cputop/dreg/ram_reg[11][7]_i_2 | cputop/dreg/wdata_reg[7]_11[0] |    8 |     5 |    no |
+|     7 | cputop/dreg/ram_reg[12][7]_i_2 | cputop/dreg/wdata_reg[7]_12[0] |    8 |     7 |    no |
+|     8 | cputop/dreg/ram_reg[13][7]_i_2 | cputop/dreg/wdata_reg[7]_13[0] |    8 |     6 |    no |
+|     9 | cputop/dreg/ram_reg[14][7]_i_2 | cputop/dreg/wdata_reg[7]_14[0] |    8 |     5 |    no |
+|    10 | cputop/dreg/ram_reg[15][7]_i_2 | cputop/dreg/wdata_reg[7]_15[0] |    8 |     6 |    no |
+|    11 | cputop/dreg/ram_reg[16][7]_i_2 | cputop/dreg/wdata_reg[7]_16[0] |    8 |     4 |    no |
+|    12 | cputop/dreg/ram_reg[17][7]_i_2 | cputop/dreg/wdata_reg[7]_17[0] |    8 |     7 |    no |
+|    13 | cputop/dreg/ram_reg[18][7]_i_2 | cputop/dreg/wdata_reg[7]_18[0] |    8 |     6 |    no |
+|    14 | cputop/dreg/ram_reg[19][7]_i_2 | cputop/dreg/wdata_reg[7]_19[0] |    8 |     5 |    no |
+|    15 | cputop/dreg/ram_reg[1][7]_i_2  | cputop/dreg/wdata_reg[7]_1[0]  |    8 |     6 |    no |
+|    16 | cputop/dreg/ram_reg[20][7]_i_2 | cputop/dreg/wdata_reg[7]_20[0] |    8 |     7 |    no |
+|    17 | cputop/dreg/ram_reg[21][7]_i_2 | cputop/dreg/wdata_reg[7]_21[0] |    8 |     5 |    no |
+|    18 | cputop/dreg/ram_reg[22][7]_i_2 | cputop/dreg/wdata_reg[7]_22[0] |    8 |     5 |    no |
+|    19 | cputop/dreg/ram_reg[23][7]_i_2 | cputop/dreg/wdata_reg[7]_23[0] |    8 |     6 |    no |
+|    20 | cputop/dreg/ram_reg[24][7]_i_2 | cputop/dreg/wdata_reg[7]_24[0] |    8 |     5 |    no |
+|    21 | cputop/dreg/ram_reg[25][7]_i_2 | cputop/dreg/wdata_reg[7]_25[0] |    8 |     6 |    no |
+|    22 | cputop/dreg/ram_reg[26][7]_i_2 | cputop/dreg/wdata_reg[7]_26[0] |    8 |     6 |    no |
+|    23 | cputop/dreg/ram_reg[27][7]_i_2 | cputop/dreg/wdata_reg[7]_27[0] |    8 |     8 |    no |
+|    24 | cputop/dreg/ram_reg[28][7]_i_2 | cputop/dreg/wdata_reg[7]_28[0] |    8 |     5 |    no |
+|    25 | cputop/dreg/ram_reg[29][7]_i_2 | cputop/dreg/wdata_reg[7]_29[0] |    8 |     4 |    no |
+|    26 | cputop/dreg/ram_reg[2][7]_i_2  | cputop/dreg/wdata_reg[7]_2[0]  |    8 |     5 |    no |
+|    27 | cputop/dreg/ram_reg[30][7]_i_2 | cputop/dreg/wdata_reg[7]_30[0] |    8 |     5 |    no |
+|    28 | cputop/dreg/ram_reg[31][7]_i_2 | cputop/dreg/wdata_reg[7]_31[0] |    8 |     6 |    no |
+|    29 | cputop/dreg/ram_reg[32][7]_i_2 | cputop/dreg/wdata_reg[7]_32[0] |    8 |     5 |    no |
+|    30 | cputop/dreg/ram_reg[33][7]_i_2 | cputop/dreg/wdata_reg[7]_33[0] |    8 |     5 |    no |
+|    31 | cputop/dreg/ram_reg[34][7]_i_2 | cputop/dreg/wdata_reg[7]_34[0] |    8 |     6 |    no |
+|    32 | cputop/dreg/ram_reg[35][7]_i_2 | cputop/dreg/wdata_reg[7]_35[0] |    8 |     6 |    no |
+|    33 | cputop/dreg/ram_reg[36][7]_i_2 | cputop/dreg/wdata_reg[7]_36[0] |    8 |     6 |    no |
+|    34 | cputop/dreg/ram_reg[37][7]_i_2 | cputop/dreg/wdata_reg[7]_37[0] |    8 |     5 |    no |
+|    35 | cputop/dreg/ram_reg[38][7]_i_2 | cputop/dreg/wdata_reg[7]_38[0] |    8 |     5 |    no |
+|    36 | cputop/dreg/ram_reg[39][7]_i_2 | cputop/dreg/wdata_reg[7]_39[0] |    8 |     6 |    no |
+|    37 | cputop/dreg/ram_reg[3][7]_i_2  | cputop/dreg/wdata_reg[7]_3[0]  |    8 |     6 |    no |
+|    38 | cputop/dreg/ram_reg[40][7]_i_2 | cputop/dreg/wdata_reg[7]_40[0] |    8 |     4 |    no |
+|    39 | cputop/dreg/ram_reg[41][7]_i_2 | cputop/dreg/wdata_reg[7]_41[0] |    8 |     7 |    no |
+|    40 | cputop/dreg/ram_reg[42][7]_i_2 | cputop/dreg/wdata_reg[7]_42[0] |    8 |     6 |    no |
+|    41 | cputop/dreg/ram_reg[43][7]_i_2 | cputop/dreg/wdata_reg[7]_43[0] |    8 |     8 |    no |
+|    42 | cputop/dreg/ram_reg[44][7]_i_2 | cputop/dreg/wdata_reg[7]_44[0] |    8 |     8 |    no |
+|    43 | cputop/dreg/ram_reg[45][7]_i_2 | cputop/dreg/wdata_reg[7]_45[0] |    8 |     6 |    no |
+|    44 | cputop/dreg/ram_reg[46][7]_i_2 | cputop/dreg/wdata_reg[7]_46[0] |    8 |     6 |    no |
+|    45 | cputop/dreg/ram_reg[47][7]_i_2 | cputop/dreg/wdata_reg[7]_47[0] |    8 |     4 |    no |
+|    46 | cputop/dreg/ram_reg[48][7]_i_2 | cputop/dreg/wdata_reg[7]_48[0] |    8 |     5 |    no |
+|    47 | cputop/dreg/ram_reg[49][7]_i_2 | cputop/dreg/wdata_reg[7]_49[0] |    8 |     5 |    no |
+|    48 | cputop/dreg/ram_reg[4][7]_i_2  | cputop/dreg/wdata_reg[7]_4[0]  |    8 |     6 |    no |
+|    49 | cputop/dreg/ram_reg[50][7]_i_2 | cputop/dreg/wdata_reg[7]_50[0] |    8 |     4 |    no |
+|    50 | cputop/dreg/ram_reg[51][7]_i_2 | cputop/dreg/wdata_reg[7]_51[0] |    8 |     5 |    no |
+|    51 | cputop/dreg/ram_reg[52][7]_i_2 | cputop/dreg/wdata_reg[7]_52[0] |    8 |     4 |    no |
+|    52 | cputop/dreg/ram_reg[53][7]_i_2 | cputop/dreg/wdata_reg[7]_53[0] |    8 |     6 |    no |
+|    53 | cputop/dreg/ram_reg[54][7]_i_2 | cputop/dreg/wdata_reg[7]_54[0] |    8 |     4 |    no |
+|    54 | cputop/dreg/ram_reg[55][7]_i_2 | cputop/dreg/wdata_reg[7]_55[0] |    8 |     4 |    no |
+|    55 | cputop/dreg/ram_reg[56][7]_i_2 | cputop/dreg/wdata_reg[7]_56[0] |    8 |     4 |    no |
+|    56 | cputop/dreg/ram_reg[57][7]_i_2 | cputop/dreg/wdata_reg[7]_57[0] |    8 |     4 |    no |
+|    57 | cputop/dreg/ram_reg[58][7]_i_2 | cputop/dreg/wdata_reg[7]_58[0] |    8 |     5 |    no |
+|    58 | cputop/dreg/ram_reg[59][7]_i_2 | cputop/dreg/wdata_reg[7]_59[0] |    8 |     4 |    no |
+|    59 | cputop/dreg/ram_reg[5][7]_i_2  | cputop/dreg/wdata_reg[7]_5[0]  |    8 |     5 |    no |
+|    60 | cputop/dreg/ram_reg[6][7]_i_2  | cputop/dreg/wdata_reg[7]_6[0]  |    8 |     5 |    no |
+|    61 | cputop/dreg/ram_reg[7][7]_i_2  | cputop/dreg/wdata_reg[7]_7[0]  |    8 |     6 |    no |
+|    62 | cputop/dreg/ram_reg[8][7]_i_2  | cputop/dreg/wdata_reg[7]_8[0]  |    8 |     6 |    no |
+|    63 | cputop/dreg/ram_reg[9][7]_i_2  | cputop/dreg/wdata_reg[7]_9[0]  |    8 |     4 |    no |
++-------+--------------------------------+--------------------------------+------+-------+-------+
+
+
+7. Clock Regions : Key Resource Utilization
+-------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E1   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  378 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1295 | 12000 |    0 |  1800 |    1 |    40 |    0 |    20 |    0 |    20 |
+| X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12000 |    0 |  1800 |    0 |    40 |    0 |    20 |    0 |    20 |
+| X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 14400 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |  7600 |    0 |  1200 |    0 |    10 |    0 |     5 |    0 |    20 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* RAMB36 site can be used as two RAMB18/FIFO18 sites.
+
+
+8. Net wise resources used in clock region X0Y0
+-----------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| BUFG        | BUFHCE_X0Y9 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  18 |     0 |        0 | clk_IBUF_BUFG  |
+| BUFG        | BUFHCE_X0Y8 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 202 |     0 |        0 | key_out_BUFG   |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+
+
+9. Net wise resources used in clock region X1Y0
+-----------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| BUFG        | BUFHCE_X1Y8 |   no  |         0 |        0 |       0 |         1 |       0 |       0 | 957 |     0 |        0 | key_out_BUFG   |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y1 [get_cells clk_IBUF_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y0 [get_cells key_out_BUFG_inst]
+
+# Location of IO Clock Primitives
+
+# Location of MMCM Clock Primitives
+
+# Location of BUFH Clock Primitives
+
+# Location of BUFR Clock Primitives
+
+# Location of BUFMR Clock Primitives
+
+# Location of PLL Clock Primitives
+
+# Location of IO Primitives which is load of clock spine
+
+# Location of clock ports
+set_property LOC IOB_X1Y26 [get_ports clk]
+
+# Clock net "clk_IBUF_BUFG" driven by instance "clk_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y1"
+#startgroup
+create_pblock {CLKAG_clk_IBUF_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_clk_IBUF_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="clk_IBUF_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_clk_IBUF_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "cputop/dreg/E[0]" driven by instance "cputop/dreg/ram_reg[0][7]_i_2" located at site "SLICE_X42Y0"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/E[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/E[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/E[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/E[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[31]_0[0]" driven by instance "cputop/dreg/ram_reg[60][7]_i_2" located at site "SLICE_X55Y10"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[31]_0[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[31]_0[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[31]_0[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[31]_0[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_10[0]" driven by instance "cputop/dreg/ram_reg[10][7]_i_2" located at site "SLICE_X51Y1"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_10[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_10[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_10[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_10[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_11[0]" driven by instance "cputop/dreg/ram_reg[11][7]_i_2" located at site "SLICE_X42Y1"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_11[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_11[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_11[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_11[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_12[0]" driven by instance "cputop/dreg/ram_reg[12][7]_i_2" located at site "SLICE_X42Y5"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_12[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_12[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_12[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_12[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_13[0]" driven by instance "cputop/dreg/ram_reg[13][7]_i_2" located at site "SLICE_X44Y2"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_13[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_13[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_13[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_13[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_14[0]" driven by instance "cputop/dreg/ram_reg[14][7]_i_2" located at site "SLICE_X55Y2"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_14[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_14[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_14[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_14[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_15[0]" driven by instance "cputop/dreg/ram_reg[15][7]_i_2" located at site "SLICE_X44Y3"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_15[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_15[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_15[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_15[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_16[0]" driven by instance "cputop/dreg/ram_reg[16][7]_i_2" located at site "SLICE_X50Y1"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_16[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_16[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_16[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_16[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_17[0]" driven by instance "cputop/dreg/ram_reg[17][7]_i_2" located at site "SLICE_X43Y6"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_17[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_17[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_17[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_17[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_18[0]" driven by instance "cputop/dreg/ram_reg[18][7]_i_2" located at site "SLICE_X49Y6"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_18[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_18[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_18[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_18[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_19[0]" driven by instance "cputop/dreg/ram_reg[19][7]_i_2" located at site "SLICE_X46Y1"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_19[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_19[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_19[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_19[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_1[0]" driven by instance "cputop/dreg/ram_reg[1][7]_i_2" located at site "SLICE_X46Y8"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_1[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_1[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_1[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_1[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_20[0]" driven by instance "cputop/dreg/ram_reg[20][7]_i_2" located at site "SLICE_X47Y8"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_20[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_20[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_20[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_20[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_21[0]" driven by instance "cputop/dreg/ram_reg[21][7]_i_2" located at site "SLICE_X45Y1"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_21[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_21[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_21[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_21[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_22[0]" driven by instance "cputop/dreg/ram_reg[22][7]_i_2" located at site "SLICE_X50Y1"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_22[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_22[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_22[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_22[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_23[0]" driven by instance "cputop/dreg/ram_reg[23][7]_i_2" located at site "SLICE_X46Y1"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_23[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_23[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_23[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_23[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_24[0]" driven by instance "cputop/dreg/ram_reg[24][7]_i_2" located at site "SLICE_X49Y6"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_24[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_24[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_24[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_24[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_25[0]" driven by instance "cputop/dreg/ram_reg[25][7]_i_2" located at site "SLICE_X51Y4"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_25[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_25[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_25[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_25[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_26[0]" driven by instance "cputop/dreg/ram_reg[26][7]_i_2" located at site "SLICE_X55Y9"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_26[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_26[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_26[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_26[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_27[0]" driven by instance "cputop/dreg/ram_reg[27][7]_i_2" located at site "SLICE_X50Y2"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_27[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_27[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_27[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_27[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_28[0]" driven by instance "cputop/dreg/ram_reg[28][7]_i_2" located at site "SLICE_X48Y7"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_28[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_28[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_28[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_28[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_29[0]" driven by instance "cputop/dreg/ram_reg[29][7]_i_2" located at site "SLICE_X52Y9"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_29[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_29[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_29[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_29[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_2[0]" driven by instance "cputop/dreg/ram_reg[2][7]_i_2" located at site "SLICE_X42Y6"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_2[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_2[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_2[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_2[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_30[0]" driven by instance "cputop/dreg/ram_reg[30][7]_i_2" located at site "SLICE_X59Y3"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_30[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_30[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_30[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_30[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_31[0]" driven by instance "cputop/dreg/ram_reg[31][7]_i_2" located at site "SLICE_X60Y9"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_31[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_31[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_31[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_31[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_32[0]" driven by instance "cputop/dreg/ram_reg[32][7]_i_2" located at site "SLICE_X49Y5"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_32[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_32[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_32[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_32[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_33[0]" driven by instance "cputop/dreg/ram_reg[33][7]_i_2" located at site "SLICE_X42Y8"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_33[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_33[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_33[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_33[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_34[0]" driven by instance "cputop/dreg/ram_reg[34][7]_i_2" located at site "SLICE_X50Y6"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_34[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_34[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_34[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_34[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_35[0]" driven by instance "cputop/dreg/ram_reg[35][7]_i_2" located at site "SLICE_X45Y3"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_35[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_35[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_35[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_35[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_36[0]" driven by instance "cputop/dreg/ram_reg[36][7]_i_2" located at site "SLICE_X46Y10"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_36[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_36[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_36[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_36[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_37[0]" driven by instance "cputop/dreg/ram_reg[37][7]_i_2" located at site "SLICE_X47Y4"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_37[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_37[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_37[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_37[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_38[0]" driven by instance "cputop/dreg/ram_reg[38][7]_i_2" located at site "SLICE_X52Y7"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_38[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_38[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_38[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_38[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_39[0]" driven by instance "cputop/dreg/ram_reg[39][7]_i_2" located at site "SLICE_X45Y5"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_39[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_39[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_39[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_39[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_3[0]" driven by instance "cputop/dreg/ram_reg[3][7]_i_2" located at site "SLICE_X42Y7"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_3[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_3[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_3[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_3[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_40[0]" driven by instance "cputop/dreg/ram_reg[40][7]_i_2" located at site "SLICE_X48Y7"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_40[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_40[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_40[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_40[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_41[0]" driven by instance "cputop/dreg/ram_reg[41][7]_i_2" located at site "SLICE_X52Y5"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_41[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_41[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_41[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_41[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_42[0]" driven by instance "cputop/dreg/ram_reg[42][7]_i_2" located at site "SLICE_X49Y9"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_42[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_42[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_42[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_42[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_43[0]" driven by instance "cputop/dreg/ram_reg[43][7]_i_2" located at site "SLICE_X51Y2"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_43[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_43[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_43[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_43[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_44[0]" driven by instance "cputop/dreg/ram_reg[44][7]_i_2" located at site "SLICE_X49Y7"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_44[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_44[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_44[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_44[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_45[0]" driven by instance "cputop/dreg/ram_reg[45][7]_i_2" located at site "SLICE_X51Y3"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_45[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_45[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_45[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_45[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_46[0]" driven by instance "cputop/dreg/ram_reg[46][7]_i_2" located at site "SLICE_X57Y4"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_46[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_46[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_46[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_46[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_47[0]" driven by instance "cputop/dreg/ram_reg[47][7]_i_2" located at site "SLICE_X60Y7"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_47[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_47[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_47[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_47[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_48[0]" driven by instance "cputop/dreg/ram_reg[48][7]_i_2" located at site "SLICE_X51Y10"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_48[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_48[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_48[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_48[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_49[0]" driven by instance "cputop/dreg/ram_reg[49][7]_i_2" located at site "SLICE_X56Y7"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_49[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_49[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_49[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_49[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_4[0]" driven by instance "cputop/dreg/ram_reg[4][7]_i_2" located at site "SLICE_X45Y1"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_4[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_4[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_4[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_4[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_50[0]" driven by instance "cputop/dreg/ram_reg[50][7]_i_2" located at site "SLICE_X54Y9"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_50[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_50[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_50[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_50[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_51[0]" driven by instance "cputop/dreg/ram_reg[51][7]_i_2" located at site "SLICE_X50Y7"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_51[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_51[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_51[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_51[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_52[0]" driven by instance "cputop/dreg/ram_reg[52][7]_i_2" located at site "SLICE_X58Y6"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_52[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_52[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_52[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_52[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_53[0]" driven by instance "cputop/dreg/ram_reg[53][7]_i_2" located at site "SLICE_X58Y4"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_53[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_53[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_53[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_53[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_54[0]" driven by instance "cputop/dreg/ram_reg[54][7]_i_2" located at site "SLICE_X60Y4"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_54[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_54[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_54[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_54[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_55[0]" driven by instance "cputop/dreg/ram_reg[55][7]_i_2" located at site "SLICE_X60Y8"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_55[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_55[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_55[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_55[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_56[0]" driven by instance "cputop/dreg/ram_reg[56][7]_i_2" located at site "SLICE_X60Y4"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_56[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_56[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_56[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_56[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_57[0]" driven by instance "cputop/dreg/ram_reg[57][7]_i_2" located at site "SLICE_X60Y9"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_57[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_57[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_57[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_57[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_58[0]" driven by instance "cputop/dreg/ram_reg[58][7]_i_2" located at site "SLICE_X61Y8"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_58[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_58[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_58[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_58[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_59[0]" driven by instance "cputop/dreg/ram_reg[59][7]_i_2" located at site "SLICE_X61Y10"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_59[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_59[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_59[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_59[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_5[0]" driven by instance "cputop/dreg/ram_reg[5][7]_i_2" located at site "SLICE_X44Y1"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_5[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_5[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_5[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_5[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_6[0]" driven by instance "cputop/dreg/ram_reg[6][7]_i_2" located at site "SLICE_X54Y0"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_6[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_6[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_6[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_6[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_7[0]" driven by instance "cputop/dreg/ram_reg[7][7]_i_2" located at site "SLICE_X41Y1"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_7[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_7[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_7[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_7[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_8[0]" driven by instance "cputop/dreg/ram_reg[8][7]_i_2" located at site "SLICE_X49Y1"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_8[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_8[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_8[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_8[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/dreg/wdata_reg[7]_9[0]" driven by instance "cputop/dreg/ram_reg[9][7]_i_2" located at site "SLICE_X44Y0"
+#startgroup
+create_pblock {CLKAG_cputop/dreg/wdata_reg[7]_9[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/dreg/wdata_reg[7]_9[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/dreg/wdata_reg[7]_9[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/dreg/wdata_reg[7]_9[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "cputop/pc/E[0]" driven by instance "cputop/pc/nextcon_reg[2]_i_2" located at site "SLICE_X60Y32"
+#startgroup
+create_pblock {CLKAG_cputop/pc/E[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_cputop/pc/E[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="cputop/pc/E[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_cputop/pc/E[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "div/out[0]" driven by instance "div/q_reg[17]" located at site "SLICE_X30Y33"
+#startgroup
+create_pblock {CLKAG_div/out[0]}
+add_cells_to_pblock [get_pblocks  {CLKAG_div/out[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="div/out[0]"}]]]
+resize_pblock [get_pblocks {CLKAG_div/out[0]}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "key_out_BUFG" driven by instance "key_out_BUFG_inst" located at site "BUFGCTRL_X0Y0"
+#startgroup
+create_pblock {CLKAG_key_out_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_key_out_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="key_out_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_key_out_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup

@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Nov 30 09:48:42 2018
+# Process ID: 24520
+# Log file: D:/Sophomore/ECOP-2018/ECOP-17343155-02/CPU_sim/vivado.log
+# Journal file: D:/Sophomore/ECOP-2018/ECOP-17343155-02/CPU_sim\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Sophomore/ECOP-2018/ECOP-17343155-02/CPU_sim/CPU_sim.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 730.707 ; gain = 158.352
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 30 10:27:53 2018...

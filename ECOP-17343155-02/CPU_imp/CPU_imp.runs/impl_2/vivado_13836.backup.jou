@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Nov 28 12:21:37 2018
+# Process ID: 11944
+# Log file: D:/Sophomore/ECOP-2018/ECOP-17343155-02/CPU_imp/CPU_imp.runs/impl_2/imp_top.vdi
+# Journal file: D:/Sophomore/ECOP-2018/ECOP-17343155-02/CPU_imp/CPU_imp.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source imp_top.tcl -notrace

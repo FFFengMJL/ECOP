@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Dec 28 03:41:52 2018
+# Process ID: 22316
+# Log file: D:/Sophomore/ECOP-2018/ECOP-17343155-03/CPU_sim/vivado.log
+# Journal file: D:/Sophomore/ECOP-2018/ECOP-17343155-03/CPU_sim\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Sophomore/ECOP-2018/ECOP-17343155-03/CPU_sim/CPU_sim.xpr
+launch_simulation
+source CPU_sim.tcl
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+close_sim

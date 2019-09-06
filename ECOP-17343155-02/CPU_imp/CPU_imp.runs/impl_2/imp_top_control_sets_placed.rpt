@@ -1,0 +1,158 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Fri Nov 30 02:10:59 2018
+| Host         : WillKen running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file imp_top_control_sets_placed.rpt
+| Design       : imp_top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |   105 |
+| Minimum Number of register sites lost to control set restrictions |    67 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              30 |           12 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             938 |          622 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             549 |          407 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------+--------------------------------+---------------------------------+------------------+----------------+
+|   Clock Signal  |          Enable Signal         |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++-----------------+--------------------------------+---------------------------------+------------------+----------------+
+|  div/out[0]     |                                |                                 |                3 |              5 |
+|  cputop/pc/E[0] |                                |                                 |                4 |              7 |
+|  key_out_BUFG   | cputop/pc/Address[7]_i_1_n_0   | cputop/regf/SR[0]               |                7 |              7 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[28][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[2][7][0]     |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[30][7][0]    |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[31][7][0]    |                                 |                7 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[32][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[33][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[34][7][0]    |                                 |                3 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[35][7][0]    |                                 |                3 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[36][7][0]    |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[37][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[29][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[38][7][0]    |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[39][7][0]    |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[3][7][0]     |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[40][7][0]    |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[41][7][0]    |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[42][7][0]    |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[43][7][0]    |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[44][7][0]    |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[45][7][0]    |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[46][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[47][7][0]    |                                 |                7 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[48][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[49][7][0]    |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[4][7][0]     |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[50][7][0]    |                                 |                3 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[51][7][0]    |                                 |                3 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[53][7][0]    |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[54][7][0]    |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[55][7][0]    |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[56][7]_0[0]  |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[57][7][0]    |                                 |                3 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[58][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[59][7][0]    |                                 |                3 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[5][7][0]     |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[60][7]_0[0]  |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[17][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[6][7][0]     |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[7][7][0]     |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[8][7][0]     |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[9][7][0]     |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[0][7][0]     |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[10][7][0]    |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[11][7][0]    |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[12][7][0]    |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[13][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[14][7][0]    |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[15][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[16][7][0]    |                                 |                3 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[52][7][0]    |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[18][7][0]    |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[19][7][0]    |                                 |                3 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[1][7]_4[0]   |                                 |                5 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[20][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[21][7][0]    |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[22][7]_0[0]  |                                 |                8 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[23][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[24][7][0]    |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[25][7][0]    |                                 |                6 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[26][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/ram_reg[27][7][0]    |                                 |                4 |              8 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[19][1]   | cputop/pc/regFile_reg[19][0]_0  |               11 |             12 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[20][2]   | cputop/pc/regFile_reg[20][0]    |               11 |             13 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[18][1]   | cputop/regf/SR[0]               |               11 |             13 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[1][1]_0  | cputop/pc/regFile_reg[1][31]    |               14 |             15 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[22][26]  | cputop/regf/SR[0]               |               11 |             15 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[17][30]  | cputop/regf/SR[0]               |               12 |             15 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[2][1]_0  | cputop/pc/regFile_reg[2][31]_0  |               15 |             15 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[3][2]_0  | cputop/pc/regFile_reg[3][0]     |               13 |             16 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[3][2]_0  | cputop/pc/regFile_reg[3][31]_0  |               15 |             16 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[4][2]_0  | cputop/pc/regFile_reg[4][0]_0   |               13 |             16 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[4][2]_0  | cputop/pc/regFile_reg[4][31]_0  |               15 |             16 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[1][1]_0  | cputop/regf/SR[0]               |               13 |             17 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[22][26]  |                                 |               16 |             17 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[17][30]  |                                 |               14 |             17 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[2][1]_0  | cputop/pc/regFile_reg[2][0]_0   |               13 |             17 |
+|  clk_IBUF_BUFG  |                                |                                 |                5 |             18 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[20][2]   | cputop/pc/regFile_reg[20][31]_0 |               14 |             19 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[18][1]   | cputop/pc/regFile_reg[18][31]_0 |               13 |             19 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[19][1]   | cputop/pc/regFile_reg[19][31]_0 |               15 |             20 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[21][31]  | cputop/regf/SR[0]               |               23 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[23][31]  |                                 |               22 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[24][0]   | cputop/pc/regFile_reg[24][31]   |               21 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[25][31]  |                                 |               22 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[26][0]_0 | cputop/pc/regFile_reg[26][31]   |               20 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[27][0]_0 | cputop/pc/regFile_reg[27][31]   |               23 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[28][0]_0 | cputop/pc/regFile_reg[28][31]   |               19 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[29][31]  |                                 |               22 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[10][0]_0 |                                 |               21 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[11][0]   |                                 |               22 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[30][31]  |                                 |               24 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[31][31]  |                                 |               23 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[12][0]   |                                 |               22 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[13][31]  |                                 |               22 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[14][31]  |                                 |               26 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[15][0]   |                                 |               24 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[6][0]_0  | cputop/regf/SR[0]               |               22 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[7][31]   | cputop/regf/SR[0]               |               20 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[8][0]    |                                 |               23 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[9][31]   |                                 |               22 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[16][0]_0 | cputop/pc/regFile_reg[16][31]   |               22 |             32 |
+| ~key_out_BUFG   | cputop/pc/regFile_reg[5][31]   | cputop/regf/SR[0]               |               21 |             32 |
++-----------------+--------------------------------+---------------------------------+------------------+----------------+
+
+

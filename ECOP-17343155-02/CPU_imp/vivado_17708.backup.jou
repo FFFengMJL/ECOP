@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Dec 22 15:51:56 2018
+# Process ID: 17652
+# Log file: D:/Sophomore/ECOP-2018/ECOP-17343155-02/CPU_imp/vivado.log
+# Journal file: D:/Sophomore/ECOP-2018/ECOP-17343155-02/CPU_imp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Sophomore/ECOP-2018/ECOP-17343155-02/CPU_imp/CPU_imp.xpr

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Dec 28 00:11:57 2018
+# Process ID: 19452
+# Log file: D:/Sophomore/ECOP-2018/ECOP-17343155-02/CPU_imp/CPU_imp.sim/sim_1/behav/webtalk.log
+# Journal file: D:/Sophomore/ECOP-2018/ECOP-17343155-02/CPU_imp/CPU_imp.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source D:/Sophomore/ECOP-2018/ECOP-17343155-02/CPU_imp/CPU_imp.sim/sim_1/behav/xsim.dir/imp_top_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2817299612 -regid "210766071_0_0_148" -xml D:/Sophomore/ECOP-2018/ECOP-17343155-02/CPU_imp/CPU_imp.sim/sim_1/behav/xsim.dir..."
+    (file "D:/Sophomore/ECOP-2018/ECOP-17343155-02/CPU_imp/CPU_imp.sim/sim_1/behav/xsim.dir/imp_top_behav/webtalk/xsim_webtalk.tcl" line 32)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 28 00:12:00 2018...

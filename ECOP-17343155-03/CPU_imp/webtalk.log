@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Dec 27 12:03:03 2018
+# Process ID: 924
+# Log file: D:/Sophomore/ECOP-2018/ECOP-17343155-03/CPU_imp/webtalk.log
+# Journal file: D:/Sophomore/ECOP-2018/ECOP-17343155-03/CPU_imp\webtalk.jou
+#-----------------------------------------------------------
+source D:/Sophomore/ECOP-2018/ECOP-17343155-03/CPU_imp/CPU_imp.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Sophomore/ECOP-2018/ECOP-17343155-03/CPU_imp/CPU_imp.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Thu Dec 27 12:03:05 2018. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 27 12:03:05 2018...
